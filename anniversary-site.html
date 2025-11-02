@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Two months down, forever to go 💙</title>
+  <style>
+    :root{--sky:#bfe9ff;--deep:#0b3d91;--accent:#90caf9;--glass: rgba(255,255,255,0.65)}
+    *{box-sizing:border-box;font-family:Inter,system-ui,Arial,Helvetica,sans-serif}
+    body{margin:0;background:linear-gradient(180deg,var(--sky),#e6f7ff);color:#0b2340}
+    header{position:sticky;top:0;background:rgba(255,255,255,0.6);backdrop-filter:blur(6px);padding:.6rem 1rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(0,0,0,0.06)}
+    .brand{display:flex;align-items:center;gap:.6rem}
+    .logo{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,#fff,#cfeefe);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--deep);box-shadow:0 4px 14px rgba(11,61,145,0.08)}
+    nav a{margin:0 .5rem;color:var(--deep);text-decoration:none;font-weight:600}
+    main{max-width:980px;margin:2rem auto;padding:1rem}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:1.2rem;align-items:center}
+    .hero-card{background:var(--glass);padding:1.4rem;border-radius:18px;box-shadow:0 8px 30px rgba(11,61,145,0.06)}
+    h1{margin:0 0 .4rem;font-size:1.9rem;color:var(--deep)}
+    p.lead{margin:0;color:#02325a}
+    .photo-frame{border-radius:14px;overflow:hidden;border:6px solid rgba(255,255,255,0.8)}
+    .photo-frame img{display:block;width:100%;height:100%;object-fit:cover}
+    .btn{display:inline-block;padding:.6rem .9rem;border-radius:12px;background:var(--deep);color:white;text-decoration:none;font-weight:700}
+    section{margin-top:1.6rem}
+    .timeline{display:flex;flex-direction:column;gap:1rem}
+    .timeline-item{background:white;padding:1rem;border-radius:12px;box-shadow:0 6px 20px rgba(11,61,145,0.04);border-left:6px solid var(--accent)}
+
+    /* Gallery */
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    .gallery-grid img{width:100%;height:200px;object-fit:cover;border-radius:12px;box-shadow:0 8px 20px rgba(11,61,145,0.06)}
+
+    /* Letter */
+    .letter{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.82));padding:1.4rem;border-radius:12px;border:1px solid rgba(11,61,145,0.03)}
+    .letter p{line-height:1.6}
+
+    /* Footer */
+    footer{margin-top:2rem;text-align:center;padding:1.4rem;color:#01314a}
+
+    /* Floating hearts */
+    .hearts{position:fixed;pointer-events:none;inset:0;overflow:hidden}
+    .heart{position:absolute;width:18px;height:18px;background:linear-gradient(45deg,#fff0,#fff);transform:translateY(0);opacity:.9;border-radius:6px}
+
+    @media (max-width:880px){.hero{grid-template-columns:1fr;}.photo-frame{height:260px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">💙</div>
+      <div>
+        <div style="font-weight:800">Thato &amp; Tshireletso</div>
+        <div style="font-size:.85rem;color:#084067">Two months down, forever to go</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#letter">My Letter</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#forever">Forever Us</a>
+    </nav>
+  </header>
+
+  <!-- Autoplay music: option A = YouTube embed. Replace VIDEO_ID below with the YouTube video id for "Trip - Ella Mai" OR supply an mp3 named trip-by-ella-mai.mp3 in the site root to use the <audio> fallback -->
+  <div style="display:none">
+    <!-- YouTube embed (attempt autoplay) -->
+    <iframe id="ytplayer" width="0" height="0" src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&controls=0&loop=1&playlist=VIDEO_ID&modestbranding=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+  </div>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-card">
+        <h1>Two months down, forever to go 💙</h1>
+        <p class="lead">Tshireletso — from the very first smile to every quiet moment after, these two months with you have been my sweetest chapter. This page is a small space where I keep our favorite memories, a letter from my heart, and a promise of many more months to come.</p>
+        <p style="margin-top:1rem">
+          <a class="btn" href="#letter">Read My Letter</a>
+        </p>
+      </div>
+
+      <div class="photo-frame">
+        <!-- Main cover photo: place the photos you uploaded in the site folder and name them exactly as listed in the included files. -->
+        <img src="IMG-20250923-WA0001.jpg" alt="Us together">
+      </div>
+    </section>
+
+    <section id="story">
+      <h2>Our Story</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>How we met</strong>
+          <p>From the moment our paths crossed, I knew there was something different — something special. We laughed, shared stories, and the world felt warmer with you in it.</p>
+        </div>
+        <div class="timeline-item">
+          <strong>First memory I'll never forget</strong>
+          <p>That day at the arcade when we couldn't stop smiling — it felt like time paused just for us. Every little memory since then has been a treasure.</p>
+        </div>
+        <div class="timeline-item">
+          <strong>Today</strong>
+          <p>Two months of love, learning, and growing together. I'm excited for everything ahead.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="letter">
+      <h2>My Letter to You</h2>
+      <div class="letter">
+        <p><strong>My Dearest Tshireletso,</strong></p>
+        <p>Two months may not seem like a long time to the world, but to me, it feels like the most beautiful chapter of my life.</p>
+        <p>Every day with you feels like a song — your smile, your voice, your presence… they all make my world softer and brighter. You have this way of making me fall for you all over again, even in the smallest moments.</p>
+        <p>I love how we laugh until we can’t breathe, how we talk about everything and nothing, and how your love has become my favorite feeling. You’ve shown me what real happiness looks like — it’s you, always you.</p>
+        <p>Thank you for being my peace, my joy, and my best part of every day.</p>
+        <p>Here’s to our two months, and to forever still waiting for us.</p>
+        <p style="margin-top:1rem;font-weight:800">I love you, always and endlessly.</p>
+        <p style="margin-top:0.6rem">— <em>Your man, Thato 💙</em></p>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="IMG-20251103-WA0001.jpg" alt="Close smile">
+        <img src="IMG-20251103-WA0002.jpg" alt="At the arcade">
+        <img src="IMG-20250923-WA0001.jpg" alt="Sweet moment">
+      </div>
+    </section>
+
+    <section id="forever">
+      <h2>Forever Us</h2>
+      <div class="timeline-item">
+        <p>My promise to you: I will keep making space for your laughter, listen to your dreams, and hold your hand through every step. Two months is only the beginning — forever is what I want with you.</p>
+        <p style="margin-top:1rem"><a class="btn" href="#gallery">See our photos</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <div>Made with 💙 by Thato — 2 months with Tshireletso</div>
+    </footer>
+  </main>
+
+  <div class="hearts" aria-hidden="true"></div>
+
+  <script>
+    // small floating hearts animation
+    const heartsEl = document.querySelector('.hearts');
+    for(let i=0;i<14;i++){
+      const h = document.createElement('div');
+      h.className='heart';
+      const left = Math.random()*96;
+      const size = 8 + Math.random()*28;
+      h.style.left = left+'%';
+      h.style.width = size+'px';
+      h.style.height = size+'px';
+      h.style.background = 'radial-gradient(circle at 30% 30%, #fff, rgba(255,255,255,0.9)), linear-gradient(135deg,#ff9ec4,#90caf9)';
+      h.style.opacity = 0.8 - Math.random()*0.4;
+      heartsEl.appendChild(h);
+      const duration = 8 + Math.random()*12;
+      h.animate([{transform:'translateY(0) rotate(0deg)', opacity:h.style.opacity},{transform:`translateY(-${120+Math.random()*360}px) rotate(${180+Math.random()*360}deg)`, opacity:0}],{duration:duration*1000,iterations:Infinity,delay:Math.random()*2000});
+    }
+
+    // Attempt to play audio programmatically as some browsers block autoplay with sound
+    async function tryPlayAudio(){
+      // if the page has an <audio> element in future or YouTube iframe, you can try to trigger play here.
+      // note: many mobile browsers require a user gesture to play audio with sound.
+      try{
+        const aud = document.querySelector('audio');
+        if(aud){
+          await aud.play();
+        }
+      }catch(e){
+        console.log('Autoplay blocked by browser — a tap may be required.',e);
+        // show a subtle play hint
+        const btn = document.createElement('a');
+        btn.className='btn';
+        btn.textContent='Play our song';
+        btn.href='#';
+        btn.style.position='fixed';
+        btn.style.right='18px';
+        btn.style.bottom='18px';
+        btn.onclick = (ev)=>{ev.preventDefault(); const a=document.querySelector('audio'); if(a) a.play(); const iframe=document.getElementById('ytplayer'); if(iframe){ iframe.style.display='block'; }};
+        document.body.appendChild(btn);
+      }
+    }
+    tryPlayAudio();
+  </script>
+</body>
+</html>
